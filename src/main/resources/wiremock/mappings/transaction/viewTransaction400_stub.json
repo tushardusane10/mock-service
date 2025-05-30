@@ -1,0 +1,24 @@
+{
+    "mappings": [
+        {
+            "request": {
+                "method": "GET",
+                "urlPathPattern": "/colleague-desktop-api/stub/v1/view-transactions",
+                "headers": {
+                    "Content-Type": {
+                        "not": {
+                            "equalTo": "application/json"
+                        }
+                    }
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "bodyFileName": "errorResponse.json"
+            }
+        }
+    ]
+}

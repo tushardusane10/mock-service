@@ -1,0 +1,22 @@
+{
+    "mappings": [
+        {
+            "request": {
+                "method": "GET",
+                "urlPathPattern": "/colleague-desktop-api/stub/v1/view-transactions",
+                "headers": {
+                    "Content-Type": {
+                        "equalTo": "application/json"
+                    }
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "bodyFileName": "transaction/viewTransaction_response.json"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/users/\\d+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "{{request.pathSegments.[2]}}",
+          "name": "John Doe",
+          "email": "john.doe@gmail.com"
+        }
+      }
+    }
+  ]
+}
